@@ -1,5 +1,6 @@
 # Load necessary libraries
 library(ggplot2)
+library(lattice)
 
 # Function for Simple Linear Regression
 simple_linear_regression <- function() {
@@ -45,6 +46,10 @@ simple_linear_regression <- function() {
   # Plot the predicted point
   points(experience_years, predicted_salary, col = "orange", pch = 19, cex = 2)
   text(experience_years, predicted_salary, labels = round(predicted_salary, 2), pos = 4, col = "orange")
+  
+  print(xyplot(salary ~ years, data = data, type = c("p", "r"), col = "darkgreen", pch = 16, cex = 1.5, lwd = 2))
+  
+  
 }
 
 multiple_linear_regression <- function() {

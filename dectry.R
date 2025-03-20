@@ -1,5 +1,4 @@
 library(C50)
-library(rpart.plot)
 
 # Load the dataset
 lenses_data <- read.csv("~/Milan_S6DS/lenses.csv")
@@ -14,20 +13,38 @@ lenses_data$class <- factor(lenses_data$class, levels = c("no contact lenses", "
 # Train a C5.0 decision tree model
 model <- C5.0(class ~ age + prescription + astigmatic + tear_rate, data = lenses_data)
 
-# Print the model summary
-summary(model)
+# Function for custom user input
+get_user_input <- function() {
+  cat("Enter the following options:\n")
+  cat("1. Age (1: young, 2: pre-presbyopic, 3: presbyopic): ")
+  age <- as.integer(readline())
+  age <- c("young", "pre-presbyopic", "presbyopic")[age]
+  
+  cat("2. Prescription (1: myope, 2: hypermetrope): ")
+  prescription <- as.integer(readline())
+  prescription <- c("myope", "hypermetrope")[prescription]
+  
+  cat("3. Astigmatic (1: no, 2: yes): ")
+  astigmatic <- as.integer(readline())
+  astigmatic <- c("no", "yes")[astigmatic]
+  
+  cat("4. Tear rate (1: reduced, 2: normal): ")
+  tear_rate <- as.integer(readline())
+  tear_rate <- c("reduced", "normal")[tear_rate]
+  
+  return(data.frame(
+    age = factor(age, levels = c("young", "pre-presbyopic", "presbyopic")),
+    prescription = factor(prescription, levels = c("myope", "hypermetrope")),
+    astigmatic = factor(astigmatic, levels = c("no", "yes")),
+    tear_rate = factor(tear_rate, levels = c("reduced", "normal"))
+  ))
+}
 
 # Visualize the decision tree using C5.0's built-in plot function
-plot(model)
+plot(model, main = "Decision Tree Visualization", type = "simple")
 
-# Test the model with new data (user input or custom values)
-test_data <- data.frame(
-  age = factor("young", levels = c("young", "pre-presbyopic", "presbyopic")),
-  prescription = factor("myope", levels = c("myope", "hypermetrope")),
-  astigmatic = factor("yes", levels = c("no", "yes")),
-  tear_rate = factor("normal", levels = c("reduced", "normal"))
-)
-
-# Make prediction using the trained model
+# Get user input and make a prediction
+cat("Provide input values for prediction:\n")
+test_data <- get_user_input()
 prediction <- predict(model, test_data)
-print(paste("Predicted Class:", prediction))
+cat(paste("Predicted Class:", prediction, "\n"))
