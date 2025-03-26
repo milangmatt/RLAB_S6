@@ -1,0 +1,25 @@
+Menu:
+1. Simple Linear Regression (Salary Prediction)
+2. Multiple Linear Regression (Performance Index Prediction)
+3. Exit
+Enter your choice (1/2/3): 1
+Enter years of experience for prediction: 15
+[1] "Predicted Salary for 15 years of experience: 109948.12"
+Menu:
+1. Simple Linear Regression (Salary Prediction)
+2. Multiple Linear Regression (Performance Index Prediction)
+3. Exit
+Enter your choice (1/2/3): 2
+Enter Hours Studied: 7
+Enter Previous Scores: 52
+Extracurricular Activities (Yes/No): Yes
+Enter Sleep Hours: 7
+Enter Sample Question Papers Attempted: 4
+[1] "Predicted Performance Index for new data: 43.54"
+[1] "Mean Squared Error (MSE): 4.19"
+Menu:
+1. Simple Linear Regression (Salary Prediction)
+2. Multiple Linear Regression (Performance Index Prediction)
+3. Exit
+Enter your choice (1/2/3): 3
+Exiting the program. Goodbye!

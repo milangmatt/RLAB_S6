@@ -1,0 +1,63 @@
+---- MENU ----
+1. Merge Datasets
+2. Find palindrome and write to file
+3. Min and Max of row and column
+4. Factorial of Fibonacci
+5. Exit
+Enter your choice: 1
+[1] "Merged DataFrame:"
+  ID Value1 Value2
+1  1      A      X
+2  2      B      Y
+3  3      C   <NA>
+4  4   <NA>      Z
+
+---- MENU ----
+1. Merge Datasets
+2. Find palindrome and write to file
+3. Min and Max of row and column
+4. Factorial of Fibonacci
+5. Exit
+Enter your choice: 2
+[1] "Palindromes Found:"
+[1] "madam"     "level"     "malayalam"
+Palindromes written to 'palindrome.csv'
+
+---- MENU ----
+1. Merge Datasets
+2. Find palindrome and write to file
+3. Min and Max of row and column
+4. Factorial of Fibonacci
+5. Exit
+Enter your choice: 3
+Max of each row:
+[1] 4 7 9
+Min of each row:
+[1] 1 5 2
+Max of each column:
+A B C
+9 7 8
+Min of each column:
+A B C
+1 2 3
+
+---- MENU ----
+1. Merge Datasets
+2. Find palindrome and write to file
+3. Min and Max of row and column
+4. Factorial of Fibonacci
+5. Exit
+Enter your choice: 4
+[1] "Factorials of Fibonacci Elements in DataFrame:"
+  Fibonacci Factorial
+1         1         1
+2         2         2
+3         3         6
+4         5       120
+
+---- MENU ----
+1. Merge Datasets
+2. Find palindrome and write to file
+3. Min and Max of row and column
+4. Factorial of Fibonacci
+5. Exit

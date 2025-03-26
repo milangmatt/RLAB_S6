@@ -1,0 +1,19 @@
+Numeric vs Numeric Statistics:
+Variance of num_dat1: 11.753
+Variance of num_dat2: 12.095
+Covariance between num_dat1 and num_dat2: 11.845
+Correlation coefficient between num_dat1 and num_dat2: 0.9934769
+
+Binary vs Binary Statistics:
+Variance of bin_dat1: 0.3
+Variance of bin_dat2: 0.3
+Covariance between bin_dat1 and bin_dat2: -0.3
+Correlation coefficient between bin_dat1 and bin_dat2: -1
+
+Chi-squared Test for Nominal vs Nominal:
+Chi-squared Statistic: 6.25
+p-value: 0.1812399
+
+Chi-squared Test for Ordinal vs Ordinal:
+Chi-squared Statistic: 10 
+p-value: 0.04042768

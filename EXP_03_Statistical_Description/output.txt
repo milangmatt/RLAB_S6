@@ -1,0 +1,9 @@
+Mean of X:  30
+Median of X:  30
+1st quartile of X:  20
+3rd quartile of X:  40
+Minimum of X:  10
+Maximum of X:  50
+Variance of X and Y:  187.5
+Covariance of X and Y:  -74.375
+Correlation of X and Y:  -0.2272549

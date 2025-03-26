@@ -1,0 +1,55 @@
+
+Menu:
+1. Binomial Logistic Regression ( Diabetes Prediction )
+2. Multinomial Logistic Regression ( Cylinder Number Prediction )
+3. Exit
+Enter your choice (1/2/3): 1
+
+Binomial Logistic Regression Model (Diabetes Prediction):
+
+Enter test data for prediction:
+Pregnancies: 3
+Glucose: 126
+BloodPressure: 88
+SkinThickness: 41
+Insulin: 235
+BMI: 39.3
+DiabetesPedigreeFunction: 0.704
+Age: 27
+
+Predicted Probability: 0.4011087
+Predicted Outcome: Not Diabetic
+Accuracy for Binomial Logistic Regression:  0.7727
+Menu:
+1. Binomial Logistic Regression ( Diabetes Prediction )
+2. Multinomial Logistic Regression ( Cylinder Number Prediction )
+3. Exit
+Enter your choice (1/2/3): 2
+# weights:  24 (14 variable)
+initial  value 35.155593
+iter  10 value 10.058965
+iter  20 value 0.072107
+iter  30 value 0.000106
+iter  30 value 0.000072
+final  value 0.000072
+converged
+
+Multinomial Logistic Regression Model ( Number of cylinders ):
+
+Enter new data for prediction:
+Miles per Gallon (mpg): 19.2
+Horsepower (hp): 123
+Weight (wt): 3.44
+Quarter Mile Time (qsec): 18.3
+Rear Axle Ratio (drat): 3.92
+Displacement (disp): 167.6
+
+Predicted Number of Cylinders: 6
+Accuracy for Multinomial Logistic Regression:  1
+
+Menu:
+1. Binomial Logistic Regression ( Diabetes Prediction )
+2. Multinomial Logistic Regression ( Cylinder Number Prediction )
+3. Exit
+Enter your choice (1/2/3): 3
+Exiting the program. Goodbye!

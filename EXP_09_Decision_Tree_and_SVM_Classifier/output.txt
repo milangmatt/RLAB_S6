@@ -1,0 +1,37 @@
+Menu:
+1. Decision Tree (Lens Classification)
+2. SVM Classifier (Currency Forgery Classification)
+3. Exit
+Enter your choice (1/2/3): 1
+NULL
+Provide input values for prediction:
+Enter the following options:
+
+1. Age (1: young, 2: pre-presbyopic, 3: presbyopic):
+1
+2. Prescription (1: myope, 2: hypermetrope):
+2
+3. Astigmatic (1: no, 2: yes):
+1
+4. Tear rate (1: reduced, 2: normal):
+2
+Predicted Class: soft contact lenses 
+Menu:
+1. Decision Tree (Lens Classification)
+2. SVM Classifier (Currency Forgery Classification)
+3. Exit
+Enter your choice (1/2/3): 2
+Model Accuracy on Test Data: 93.81818 %
+Provide input values for prediction:
+Enter values for the features:
+
+Variance: -2.5665
+
+Skewness: -6.8824
+Predicted Class: Forged 
+Menu:
+1. Decision Tree (Lens Classification)
+2. SVM Classifier (Currency Forgery Classification)
+3. Exit
+Enter your choice (1/2/3): 3
+Exiting the program. Goodbye!
